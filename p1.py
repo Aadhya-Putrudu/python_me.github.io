@@ -1,0 +1,25 @@
+p1_name=input("Enter product 1 name : ")
+qty1=float(input("Enter quantity : "))
+rate1=float(input("Enter rate : "))
+p2_name=input("Enter product 2 name : ")
+qty2=float(input("Enter quantity : "))
+rate2=float(input("Enter rate : "))
+total=(qty1*rate1)+(qty2*rate2)
+gst=total*5/100
+bill=total+gst
+print("Bill is : ",bill)
+paid_amount=float(input("Enter paid amount : "))
+balance=bill-paid_amount
+
+print("..............................")
+print("Product 1   = ",p1_name)
+print("quantity    = ",qty1)
+print("Rate        = ",rate1)
+print("Product 2   = ",p2_name)
+print("Quantity    = ",qty2)
+print("Rate        = ",rate2)
+print("Total       = ",total)
+print("GST         = ",gst)
+print("Bill amount = ",bill)
+print("Paid amount = ",paid_amount)
+print("Balance     = ",balance)
